@@ -1,16 +1,16 @@
 # On-Chain DeFi Identity Gateway
 
-IdentitySwap is an Automatic Money Market (AMM) dApp that 
-demonstrates the concept of decentralised Identity to the 
+identity-swap is an Automatic Money Market (AMM) dApp that 
+demonstrates the concept of an identity requirement to the 
 Solana SPL Token-Swap program. A user can interact with a 
 liquidity pool only if they are in possession of a valid 
 identity, certified by a trusted identity validator. 
 
-The association of an identity with a transaction is stored on-chain.
+The association of an identity account with a transaction is stored on-chain.
 
 ## Motivation
 
-Defi services have traditionally been anonymous/pseudonymous, 
+DeFi services have traditionally been anonymous/pseudonymous, 
 in that they do not require any user identification or KYC to use. 
 
 While in many ways this is a good thing, it leads to services 
@@ -21,7 +21,7 @@ which, in turn, attracts the attention of
 
 Centralised exchanges that previously emphasised anonymity, 
 such as [BitMEX](https://www.coindesk.com/bitmex-accelerates-identity-verification-kyc),
-have already integrated KYC to avoid the 
+have recently integrated KYC to avoid the 
 risk of being shut down by regulators. 
 
 Adding KYC or Identity in any form to DEXes is a much more 
@@ -74,7 +74,7 @@ The Identity Requester (IdR) is the pool itself.
 This is an "on-chain”" requester, unlike the off-chain identity
 requesters such as BitMEX or other centralised exchanges or blockchain services.
 
-For the purposes of the hackathon, the Identity Validator is any private key.
+For the purposes of the hackathon, the Identity Validator is any private key(MC: a user would have an IDV's private key or something signed by the IDV private key?).
 The public key is passed as a parameter during initialization of the liquidity pool.
 
 Note: users’ personal information is itself not stored on the blockchain
@@ -103,7 +103,7 @@ Run:
     yarn
     yarn start
 
-to start the app in the development mode.
+To start the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
@@ -114,7 +114,7 @@ You will also see any lint errors in the console.
 1. Connect your wallet
 2. Airdrop some test tokens
 3. Register your identity
-4. Trade!
+4. Swap!
 
 To get test tokens, you can use the [ops scripts](/etc/ops/README.md). 
 
